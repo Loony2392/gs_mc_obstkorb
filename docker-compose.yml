@@ -53,9 +53,9 @@ services:
     volumes:
       - /mnt/user/appdata/gs_mc_obstkorb:/data
       
-    networks:
+  networks:
     default:
-        external:
-            name: gameserver
+      external:
+        name: gameserver
 
     restart: unless-stopped
