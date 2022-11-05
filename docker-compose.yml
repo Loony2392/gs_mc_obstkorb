@@ -3,6 +3,9 @@ services:
   mc:
     image: itzg/minecraft-server
     container_name: gs_mc_obstkorb
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
     environment:
       EULA: true
       ENABLE_RCON: true
@@ -54,6 +57,4 @@ services:
       - /mnt/user/appdata/gs_mc_obstkorb:/data
 
 networks:
-  network1:
-    external: true
     name: my-app-net
