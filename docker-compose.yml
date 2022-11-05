@@ -52,7 +52,6 @@ services:
       - 25585:25565
     volumes:
       - /mnt/user/appdata/gs_mc_obstkorb:/data
-  restart: unless-stopped
 
 networks:
   network1:
